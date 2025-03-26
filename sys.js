@@ -4,7 +4,7 @@ document.addEventListener("wheel", function(event) {
 
     event.preventDefault();
     window.scrollBy({
-        left: event.deltaY * 2, // Multiplica para dar mais suavidade
+        left: event.deltaY * 3, // Multiplica para dar mais suavidade
         behavior: 'smooth'
     });
 }, { passive: false });

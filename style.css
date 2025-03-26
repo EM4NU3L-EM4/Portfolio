@@ -95,16 +95,18 @@ header nav ul li a:hover {
 }
 
 .main {
-  min-width: 100%;
+  
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
 }
 .main .hi {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  border-right: 4px solid black;
 }
 .main .hi .p1 {
   width: 50%;
@@ -132,15 +134,33 @@ header nav ul li a:hover {
   animation: flowx 10s infinite running;
 }
 
-a.btn{
-    padding: 8px;
-    margin: 4px;
-    background-color: var(--clrText);
-    color: var(--clrBG);
-    text-decoration: none;
-    border-radius: 8px;
+a.btn {
+  padding: 8px;
+  margin: 4px;
+  background-color: var(--clrText);
+  color: var(--clrBG);
+  text-decoration: none;
+  border-radius: 8px;
 }
 
+.main .about {
+  width: 700px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background:rgb(218, 218, 218);
+  color: rgb(24, 24, 24);
+  margin: 32px;
+}
+
+.main .about .pic {
+  width: 256px;
+  height: 256px;
+  border-radius: 50%;
+  object-fit: cover;
+}
 footer {
   min-width: 100%;
   height: 100vh;
@@ -178,7 +198,7 @@ footer ul li a {
   }
 
   50% {
-    transform: translateY(10px) rotate(10deg);
+    transform: translateY(10px) scale(0.8) rotate(10deg);
   }
 }
 
@@ -189,7 +209,7 @@ footer ul li a {
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--clrText);
-  height: 6px;
+  height: 8px;
 }
 
 .icon {
